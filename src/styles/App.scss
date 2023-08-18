@@ -1,0 +1,79 @@
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+h1,
+h5 {
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 900;
+  font-size: 42px;
+  letter-spacing: 1;
+  padding: 2rem 0 0 6rem;
+  // margin: 1rem;
+  animation: fadeOut 10s forwards;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 6rem;
+}
+
+.bottomDeck,
+.empty {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 28rem;
+  border-radius: 2rem;
+  // top: 35%;
+  // left: 42%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffea00;
+  // opacity: .7;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(80, 80, 66, 0.3);
+  z-index: -1000;
+
+  span {
+    font-size: 200px;
+    // filter: saturate(500%);
+    opacity: .6;
+  }
+}
+
+.empty {
+  span {
+    font-size: 20px;
+    opacity: 1;
+    color: #827b35;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, -50%);
+  width: 40rem;
+  animation: fadeOut 10s forwards;
+  // margin-left: 55%;
+}
+
+// body {
+
+//   position: relative;
+// }

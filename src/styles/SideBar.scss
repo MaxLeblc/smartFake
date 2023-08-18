@@ -1,0 +1,61 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    padding-left: 6rem;
+
+    p {
+        font-family: 'Unbounded', cursive;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+    }
+
+    input {
+        font-family: 'Unbounded', cursive;
+        font-weight: 500;
+        font-size: 15px;
+        background: none;
+        color: #000;
+        margin-bottom: 1rem;
+
+    }
+
+    ::placeholder {
+        color: #000;
+    }
+
+    button {
+        width: 10rem;
+        border-radius: .5rem;
+        background: #ffea00;
+        color: #000;
+        font-weight: 600;
+
+        &:active {
+            transform: scale(.9);
+            background: #000;
+            color: #ffea00;
+        }
+    }
+}
+
+.container {
+    // border: solid rgb(166, 0, 255);
+    display: flex;
+    flex-direction: column-reverse;
+
+    .expandButton {
+        position: relative;
+        top: 2.5rem;
+        left: 98%;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 1rem 1rem 1rem;
+        border-color: transparent transparent #000 transparent;
+        transform: rotate(90deg);
+        z-index: 1;
+        cursor: pointer;
+    }
+}
